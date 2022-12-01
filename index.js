@@ -312,6 +312,7 @@ export default class VideoPlayer extends Component {
       [
         <Image
           {...props}
+          key={new Date().getTime().toString()}
           style={[
             styles.thumbnail,
             this.getSizeStyles(),
