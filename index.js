@@ -312,7 +312,7 @@ export default class VideoPlayer extends Component {
       [
         <Image
           {...props}
-          key={new Date().getTime().toString()}
+          key={0}
           style={[
             styles.thumbnail,
             this.getSizeStyles(),
@@ -322,6 +322,7 @@ export default class VideoPlayer extends Component {
           source={thumbnail}
         />,
         <View
+          key={1}
           style={{
             position: 'absolute',
             top: 0,
